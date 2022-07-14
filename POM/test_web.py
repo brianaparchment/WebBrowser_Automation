@@ -15,4 +15,7 @@ class Quiz_Results(unittest.TestCase):
     #generates random number to insert in quiz answers
     num = list(range(1,11))
     random_num = random.choice(num)
-
+    
+    def setUp(self):
+        loc = Pg_locators()
+        
