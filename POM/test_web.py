@@ -8,3 +8,7 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from web_locators import Pg_locators
 
+class Quiz_Results(unittest.TestCase):
+    pageURL = "https://www.albany.edu/~BP754362/tips.html"
+    driver = webdriver.Chrome("/Users/briana/Desktop/chromedriver")
+
