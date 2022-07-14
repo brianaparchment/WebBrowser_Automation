@@ -40,11 +40,20 @@ class Quiz_Results(unittest.TestCase):
         time.sleep(5)
 
         expectedURL = "https://www.albany.edu/~BP754362/stressquiz.html"
+       #Checks if url has changed to the quiz page
         if self.driver.current_url == expectedURL:
             time.sleep(1)
             print("True")
         else:
             print("False")
+
+    def tearDown(cls):
+        cls.driver.close()
+if __name__ == "__main__":
+    unittest.main()
+
+    
+
 
         
         
