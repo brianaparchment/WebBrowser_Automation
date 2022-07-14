@@ -20,4 +20,16 @@ class Quiz_Results(unittest.TestCase):
         loc = Pg_locators()
         #clicks on quiz page
         loc.page_link_txt1 = self.driver.find_element_by_link_text(loc.page_link_txt).click()
+        time.sleep(5)
+        loc.question1 = self.driver.find_element_by_id(loc.q1).send_keys(self.random_num)
+        time.sleep(5)
+        loc.question2 = self.driver.find_element_by_id(loc.q2).send_keys(self.random_num)
+        time.sleep(5)
+        loc.question3 = self.driver.find_element_by_id(loc.q3).send_keys(self.random_num)
+        time.sleep(5)
+        loc.question4 = self.driver.find_element_by_id(loc.q4).send_keys(self.random_num)
+        time.sleep(5)
+        loc.question5 = self.driver.find_element_by_id(loc.q5).send_keys(self.random_num)
+        time.sleep(5)
+        
         
