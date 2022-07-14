@@ -36,5 +36,9 @@ class Quiz_Results(unittest.TestCase):
         time.sleep(5)
         loc.question5 = self.driver.find_element_by_id(loc.q5).send_keys(self.random_num)
         time.sleep(5)
+        loc.click_btn = self.driver.find_element_by_xpath(loc.calc_btn_xpath).click()
+        time.sleep(5)
+
+        expectedURL = "https://www.albany.edu/~BP754362/stressquiz.html"
         
         
