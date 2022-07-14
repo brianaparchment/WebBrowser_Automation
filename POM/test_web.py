@@ -18,4 +18,6 @@ class Quiz_Results(unittest.TestCase):
     
     def setUp(self):
         loc = Pg_locators()
+        #clicks on quiz page
+        loc.page_link_txt1 = self.driver.find_element_by_link_text(loc.page_link_txt).click()
         
