@@ -6,7 +6,7 @@ import unittest
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
-from web_locators import Pg_locators
+from web_locators import Pg_Locators
 
 class Quiz_Results(unittest.TestCase):
     pageURL = "https://www.albany.edu/~BP754362/tips.html"
@@ -22,7 +22,7 @@ class Quiz_Results(unittest.TestCase):
         time.sleep(5)
     
     def test_quiz(self):
-        loc = Pg_locators()
+        loc = Pg_Locators()
         #clicks on quiz page
         loc.page_link_txt1 = self.driver.find_element_by_link_text(loc.page_link_txt).click()
         time.sleep(5)
@@ -52,7 +52,7 @@ class Quiz_Results(unittest.TestCase):
 if __name__ == "__main__":
     unittest.main()
 
-    
+
 
 
         
