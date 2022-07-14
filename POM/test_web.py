@@ -15,8 +15,13 @@ class Quiz_Results(unittest.TestCase):
     #generates random number to insert in quiz answers
     num = list(range(1,11))
     random_num = random.choice(num)
-    
+
     def setUp(self):
+        self.driver.get(self.pageURL)
+        self.driver.maximize_window()
+        time.sleep(5)
+    
+    def test_quiz(self):
         loc = Pg_locators()
         #clicks on quiz page
         loc.page_link_txt1 = self.driver.find_element_by_link_text(loc.page_link_txt).click()
