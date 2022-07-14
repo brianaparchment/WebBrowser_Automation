@@ -40,5 +40,11 @@ class Quiz_Results(unittest.TestCase):
         time.sleep(5)
 
         expectedURL = "https://www.albany.edu/~BP754362/stressquiz.html"
+        if self.driver.current_url == expectedURL:
+            time.sleep(1)
+            print("True")
+        else:
+            print("False")
+
         
         
