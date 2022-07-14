@@ -12,3 +12,7 @@ class Quiz_Results(unittest.TestCase):
     pageURL = "https://www.albany.edu/~BP754362/tips.html"
     driver = webdriver.Chrome("/Users/briana/Desktop/chromedriver")
 
+    #generates random number to insert in quiz answers
+    num = list(range(1,11))
+    random_num = random.choice(num)
+
