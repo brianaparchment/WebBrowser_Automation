@@ -1,6 +1,9 @@
 # WebBrowser_Automation
-
 This program uses Python and Selenium to test the functionality of the quiz feature on the Less Likely website.
+
+The main code can be found in POM/test_web.py
+The locators can be found in POM/
+
 
 #the goal is to test the quiz function on the LessLikely website
 #step 1: open https://www.albany.edu/~BP754362/tips.html
